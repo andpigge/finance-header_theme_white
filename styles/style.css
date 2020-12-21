@@ -1,0 +1,266 @@
+.body {
+  background-color: #1D1D1D;
+}
+
+.body_theme_white {
+  background-color: #fff;
+}
+
+/* Миксы */
+.outline-color-dark {
+  outline-color: green;
+}
+/* Миксы */
+
+.page {
+  max-width: 1100px;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: 'Overpass', sans-serif;
+}
+
+/* header start */
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  min-height: 45px;
+  align-items: center;
+  padding-top: 58px;
+}
+
+.header__column-links {
+  display: flex;
+  align-items: center;
+  min-width: 91px;
+  justify-content: space-between;
+  z-index: 3;
+  margin: 0;
+  padding: 0;
+}
+
+.header__column-list {
+  list-style: none;
+}
+
+.header__icons-margin {
+  margin-left: 134px;
+}
+
+.header__column-link {
+  text-decoration: none;
+}
+
+/* .header-icons_theme_white {} */
+
+.header__social__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.logo {
+  font-weight: 500;
+  font-size: 26px;
+  font-family: 'Maven Pro', sans-serif;
+  z-index: 3;
+}
+
+.logo__img {
+  width: 35px;
+  height: 42px;
+  margin-right: 6px;
+}
+
+.logo__link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 146px;
+}
+
+.logo__link:link {
+  color: white;
+}
+
+.logo__link:visited {
+  color: white;
+}
+
+.logo__link_theme_white:link {
+  color: #2E2E2E;
+}
+
+.logo__link_theme_white:visited {
+  color: #2E2E2E;
+}
+
+.open-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 34px;
+  width: 34px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.header-menu__open-menu-margin {
+  margin-right: 134px;
+}
+
+/* .open-menu_theme_white {} */
+
+.open-menu__line-top {
+  width: 35px;
+  height: 2.5px;
+  background-color: #92E3A9;
+  border-radius: 26px;
+}
+
+.open-menu__line-center {
+  width: 15px;
+  height: 2px;
+  background-color: #92E3A9;
+  border-radius: 26px;
+}
+
+.open-menu__line-bottom {
+  width: 20px;
+  height: 2.5px;
+  background-color: #92E3A9;
+  border-radius: 26px;
+}
+
+.open-menu__line-top_theme_white, .open-menu__line-center_theme_white, .open-menu__line-bottom_theme_white {
+  background-color: #000;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.header__content-margin {
+  margin: 103px 134px auto;
+}
+
+.header-content__title {
+  width: 415px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 74px;
+  color: #D2D2D2;
+  margin: 0 0 27px 0;
+}
+
+.header-content__title_theme_white {
+  color: #263238;
+}
+
+.header-content__subtitle {
+  width: 560px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  color: #A9A9A9;
+  margin: 0 0 67px 0;
+}
+
+.header-content__subtitle_theme_white {
+  color: #767676;
+}
+
+.open-learn-more {
+  position: relative;
+  width: 240px;
+  min-height: 58px;
+  background-color: #27AE60;
+  border: none;
+  border-radius: 55px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 37px;
+  color: white;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.open-learn-more::before {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  background-color: #27AE60;
+  bottom: -15px;
+  left: 86px;
+}
+
+.header-bg-left {
+  position: absolute;
+  width: 416px;
+  height: 100vh;
+  max-height: 788px;
+  background-image: url(../images/header-image_bg-left.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom left;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.header-bg-right {
+  position: absolute;
+  width: 717px;
+  height: 100vh;
+  background-image: url(../images/header-image_bg_right.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.header-bg-illustration {
+  position: absolute;
+  width: 760px;
+  height: 742px;
+  background-image: url(../images/header-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.header-bg-illustration_theme_white {
+  background-image: url(../images/header-image_theme_dark.png);
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: 44px;
+  right: 50%;
+  border: 1px solid #27AE60;
+  width: 34px;
+  height: 34px;
+  background-color: transparent;
+  color: #6FCF97;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 24px;
+  z-index: 3;
+  line-height: 36px;
+}
+/* header end */
